@@ -1,30 +1,8 @@
-import './styles/App.css'
-import './styles/Header.css'
-import './styles/Nav.css'
+import React from 'react'
 
-
-import flaticonWelcomeImage from './assets/images/flaticon-welcome-image.png'
-import backArrow from './assets/icons/back-arrow.png'
-import downloadButton from './assets/icons/download-button.png'
-import rateStarButton from './assets/icons/rate-star-button.png'
-import rubbishButton from './assets/icons/rubbish-bin-delete-button.png'
-import { useState } from 'react'
-import { isElement } from 'react-dom/test-utils'
-import Header from './components/Header'
-import Main from './components/Main'
-import Nav from './components/Nav'
-
-
-
-
-
-function App() {
+function Main() {
   return (
-  
-    <div className="app">
-     <Header></Header>
-     <Nav></Nav>
-      <main className="email-view">
+    <main className="email-view">
         <nav className="email-toolbar">
           <ul>
             <li>
@@ -44,7 +22,6 @@ function App() {
             <button>&gt;</button>
           </div>
         </nav>
-        
         <article className="email-content">
           <div className="title">
             <h1>Welcome to Flaticon</h1>
@@ -98,10 +75,7 @@ function App() {
           </section>
         </article>
       </main>
-    </div>
-   
-  
-  ) 
+  )
 }
 
-export default App
+export default Main
